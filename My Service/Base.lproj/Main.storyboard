@@ -122,10 +122,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Fill All Every Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvV-n9-2ge">
+                                <rect key="frame" x="69" y="288" width="237" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="alertLabel" destination="XvV-n9-2ge" id="bLN-fX-O5N"/>
                         <outlet property="nameTextField" destination="bgg-SH-2Su" id="7cK-Jd-GWj"/>
                         <outlet property="passwordTextField" destination="WcH-Rf-tzF" id="cLl-Ma-sfE"/>
                         <outlet property="userTextField" destination="C3B-bY-B9t" id="xuW-n4-HHm"/>
