@@ -12,7 +12,7 @@
         <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -60,7 +60,7 @@
         <!--AddNewUser-->
         <scene sceneID="kNe-j6-uMD">
             <objects>
-                <viewController title="AddNewUser" id="cDU-AP-GKr" customClass="AddNewUserViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddNewUserViewController" title="AddNewUser" id="cDU-AP-GKr" customClass="AddNewUserViewController" customModule="My_Service" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hhU-EO-yDY"/>
                         <viewControllerLayoutGuide type="bottom" id="lhM-K1-efm"/>
@@ -137,6 +137,7 @@
                         <outlet property="nameTextField" destination="bgg-SH-2Su" id="7cK-Jd-GWj"/>
                         <outlet property="passwordTextField" destination="WcH-Rf-tzF" id="cLl-Ma-sfE"/>
                         <outlet property="userTextField" destination="C3B-bY-B9t" id="xuW-n4-HHm"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackHome" id="8Fm-P5-r7D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMM-J6-0pC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -35249,4 +35250,7 @@ AAAAAAAQDwA
 </mutableData>
         </image>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8Fm-P5-r7D"/>
+    </inferredMetricsTieBreakers>
 </document>

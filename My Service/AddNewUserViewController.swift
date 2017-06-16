@@ -106,13 +106,26 @@ class AddNewUserViewController: UIViewController {
         }
         task.resume()
    
-        
+        performSegue(withIdentifier: "BackHome", sender: self)
         
         
         
     } // uploadValue
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goHome" {
+            if let desination = segue.destination as? ViewController {
+                desination.myString = (sender as? String)!
+                
+                
+                
+            }
+        
+        
+        } // if
+        
+        
+    } // prepare
     
     
 
